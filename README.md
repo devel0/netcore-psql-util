@@ -1,15 +1,21 @@
 # netcore-psql-util
 
-net core postgres util
+.NET core postgresql util
 
-## install
+## install and usage
 
-```
-dotnet add package netcore-psql-util --version 1.0.0-CI00000 --source https://www.myget.org/F/devel0/api/v3/index.json
-```
+browse [myget istructions](https://www.myget.org/feed/devel0/package/nuget/netcore-psql-util)
 
-## usage
+## how this project was built
 
-```csharp
-using SearchAThing.NETCorePsqlUtil;
+```sh
+mkdir netcore-psql-util
+cd netcore-psql-util
+
+dotnet new sln
+dotnet new classlib -n netcore-psql-util
+
+dotnet sln netcore-psql-util.sln add netcore-psql-util/netcore-psql-util.csproj
+dotnet restore
+dotnet build
 ```
