@@ -1,5 +1,7 @@
 # netcore-psql-util
 
+[![devel0 MyGet Build Status](https://www.myget.org/BuildSource/Badge/devel0?identifier=4f3ad9fa-f5b8-4b0d-a9e1-3f19cd58e76a)](https://www.myget.org/)
+
 .NET core postgresql util
 
 ## install and usage
