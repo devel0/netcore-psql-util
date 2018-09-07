@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace SearchAThing.NETCorePsqlUtil
+namespace SearchAThing.PsqlUtil
 {
 
     public static partial class Util
