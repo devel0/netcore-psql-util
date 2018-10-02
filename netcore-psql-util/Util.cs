@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 namespace SearchAThing.PsqlUtil
 {
@@ -197,6 +198,44 @@ namespace SearchAThing.PsqlUtil
         public static bool IsPsqlNull(this object obj)
         {
             return obj == null || obj == DBNull.Value;
+        }
+
+        /// <summary>
+        /// add first and last aggregate functions
+        /// https://wiki.postgresql.org/wiki/First/last_(aggregate)
+        /// </summary>
+        public static void EnableFirstLastAggregateFunctions(this DbContext ctx)
+        {
+            const string sql = @"
+DROP AGGREGATE IF EXISTS public.FIRST( anyelement );
+DROP AGGREGATE IF EXISTS public.LAST( anyelement );
+
+-- Create a function that always returns the first non-NULL item
+CREATE OR REPLACE FUNCTION public.first_agg ( anyelement, anyelement )
+RETURNS anyelement LANGUAGE SQL IMMUTABLE STRICT AS $$
+        SELECT $1;
+$$;
+ 
+-- And then wrap an aggregate around it
+CREATE AGGREGATE public.FIRST (
+        sfunc    = public.first_agg,
+        basetype = anyelement,
+        stype    = anyelement
+);
+ 
+-- Create a function that always returns the last non-NULL item
+CREATE OR REPLACE FUNCTION public.last_agg ( anyelement, anyelement )
+RETURNS anyelement LANGUAGE SQL IMMUTABLE STRICT AS $$
+        SELECT $2;
+$$;
+ 
+-- And then wrap an aggregate around it
+CREATE AGGREGATE public.LAST (
+        sfunc    = public.last_agg,
+        basetype = anyelement,
+        stype    = anyelement
+);";
+            ctx.Database.ExecuteSqlCommand(sql);
         }
 
     }
