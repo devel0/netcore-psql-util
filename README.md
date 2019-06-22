@@ -1,14 +1,12 @@
 # netcore-psql-util
 
-[![devel0 MyGet Build Status](https://www.myget.org/BuildSource/Badge/devel0?identifier=4f3ad9fa-f5b8-4b0d-a9e1-3f19cd58e76a)](https://www.myget.org/)
+[![NuGet Badge](https://buildstats.info/nuget/netcore-util)](https://www.nuget.org/packages/netcore-psql-util/)
 
 .NET core postgresql util
 
-## install and usage
+## install
 
-browse [myget instructions](https://www.myget.org/feed/devel0/package/nuget/netcore-psql-util)
-
-add `nuget.config` where your solution or csproj that refer this library in order to allow other to restore correcly myget dependencies.
+- [nuget package](https://www.nuget.org/packages/netcore-psql-util/)
 
 ## how this project was built
 
