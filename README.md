@@ -8,6 +8,10 @@
 
 - [nuget package](https://www.nuget.org/packages/netcore-psql-util/)
 
+## API
+
+- [Util](doc/api/PsqlUtil/Util.md)
+
 ## how this project was built
 
 ```sh
