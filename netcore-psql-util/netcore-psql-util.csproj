@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>netcore-psql-util</PackageId>
-        <PackageVersion>1.2.0</PackageVersion>
+        <PackageVersion>1.2.1</PackageVersion>
         <Title>net core postgres util</Title>
         <Description></Description>
         <Authors>Lorenzo Delana</Authors>
