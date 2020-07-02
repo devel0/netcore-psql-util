@@ -3,7 +3,7 @@
         <TargetFramework>netstandard2.1</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>netcore-psql-util</PackageId>
-        <PackageVersion>1.1.3</PackageVersion>
+        <PackageVersion>1.2.0</PackageVersion>
         <Title>net core postgres util</Title>
         <Description></Description>
         <Authors>Lorenzo Delana</Authors>
