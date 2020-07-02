@@ -2,7 +2,7 @@
 
 ## namespaces
 
-- [SearchAThing](/api/SearchAThing.html)
+- [SearchAThing.PsqlUtil](/api/SearchATSearchAThing.PsqlUtil.Util.html)
 
 ## other resources
 
