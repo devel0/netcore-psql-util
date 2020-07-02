@@ -10,7 +10,7 @@
 
 ## API
 
-- [Util](doc/api/PsqlUtil/Util.md)
+- [API](https://devel0.github.io/netcore-psql-util/api/SearchAThing.PsqlUtil.Util.html)
 
 ## how this project was built
 
