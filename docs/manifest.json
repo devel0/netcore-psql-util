@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.PsqlUtil.Util.html",
-          "hash": "ITs1JMkpU2NCjcm3YtXdfA=="
+          "hash": "A9nAQJjZFVJwaY8f1ahV/w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SearchAThing.PsqlUtil.html",
-          "hash": "kQYaLxN0HqBE+QERPJpo5Q=="
+          "hash": "NTVW0bhwV32xg2bFfU6ihA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "bNUjjip/AfqIzUApuI3kKQ=="
+          "hash": "GIOgVPnX4OkrM9EMJR6a8Q=="
         }
       },
       "is_incremental": false,
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "5rBaa3xoJA6qA4c5gIyUdw=="
+          "hash": "RyE85+CsrU4qkaMYRBZrpg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,19 +84,22 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "QNEL1UFjLZW+im7KU19wBw=="
+          "hash": "2cZiTf97mT9SSsnTkX1yRw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+          "hash": "OMfSQAixGhs9Gji++Erhgw=="
         }
       },
       "is_incremental": false,
@@ -106,23 +109,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because docfx version changed from 2.55.0.0 to 2.56.2.0.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "DocfxVersionChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
